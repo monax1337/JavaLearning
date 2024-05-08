@@ -3,40 +3,40 @@ package service;
 import java.util.*;
 
 public class FindRangeService {
-    public static List<ListIterator<String>> findRange(ListIterator<String> start, ListIterator<String> end, char symbol) {
-        ListIterator<String> rangeStart = null;
-        ListIterator<String> rangeEnd = null;
+    public static List<Integer> findRange(ListIterator<String> start, ListIterator<String> end, char symbol) {
+        int rangeStart = -1;
+        int rangeEnd = -1;
+        int index = 0;
 
         while (start.hasNext()) {
             String str = start.next();
-            System.out.println("Checking string 1: " + str);
             if (str.charAt(0) == symbol) {
-                rangeStart = start;
-                rangeStart.previous();
-                System.out.println(rangeStart.nextIndex());
+                rangeStart = index;
                 break;
             }
+            index++;
         }
 
-        if (rangeStart == null) {
+        if (rangeStart == -1) {
             return null;
         }
 
-        while (rangeStart.hasNext() && rangeStart != end) {
-            String str = rangeStart.next();
-            System.out.println("Checking string: " + str);
+        while (start.hasNext() && start != end) {
+            String str = start.next();
             if (str.charAt(0) != symbol) {
-                rangeEnd = rangeStart;
-                rangeEnd.previous();
+                rangeEnd = index;
                 break;
             }
+            index++;
         }
 
-        if (rangeEnd == null) {
-            rangeEnd = end;
-            rangeEnd.previous();
+        if (rangeEnd == -1) {
+            rangeEnd = index;
         }
 
-        return new ArrayList<>(Arrays.asList(rangeStart, rangeEnd));
+        List<Integer> range = new ArrayList<>();
+        range.add(rangeStart);
+        range.add(rangeEnd);
+        return range;
     }
 }

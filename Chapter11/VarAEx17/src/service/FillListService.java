@@ -11,9 +11,6 @@ public class FillListService {
         fruits.add("Banana");
         fruits.add("Orange");
         fruits.add("Cherry");
-        fruits.add("Cherry");
-        fruits.add("Cherry");
-        fruits.add("Cherry");
         fruits.add("Grape");
         fruits.add("Strawberry");
         fruits.add("Pineapple");
