@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bank>
+    <Deposit>
+        <Name>Bank of America</Name>
+        <Country>USA</Country>
+        <Type>Savings</Type>
+        <Depositor>John Doe</Depositor>
+        <Account_id>123456789</Account_id>
+        <Amount_on_deposit>10000</Amount_on_deposit>
+        <Profitability>5%</Profitability>
+        <Time_constraints>1 year</Time_constraints>
+    </Deposit>
+    <Deposit>
+        <Name>HSBC</Name>
+        <Country>UK</Country>
+        <Type>Term deposit</Type>
+        <Depositor>Alice Smith</Depositor>
+        <Account_id>987654321</Account_id>
+        <Amount_on_deposit>5000</Amount_on_deposit>
+        <Profitability>4%</Profitability>
+        <Time_constraints>2 years</Time_constraints>
+    </Deposit>
+</Bank>

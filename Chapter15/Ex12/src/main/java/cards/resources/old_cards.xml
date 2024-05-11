@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Old_Cards>
+    <Card>
+        <Theme>Urban Landscape</Theme>
+        <Type>Greeting</Type>
+        <Type_Sent>Yes</Type_Sent>
+        <Country>USA</Country>
+        <Year>1980</Year>
+        <Author>John Smith</Author>
+        <Valuable>Thematic</Valuable>
+    </Card>
+    <Card>
+        <Theme>Nature</Theme>
+        <Type>Ordinary</Type>
+        <Type_Sent>No</Type_Sent>
+        <Country>France</Country>
+        <Year>1995</Year>
+        <Author>Maria Dupont</Author>
+        <Valuable>No</Valuable>
+    </Card>
+    <Card>
+        <Theme>Religion</Theme>
+        <Type>Promotional</Type>
+        <Type_Sent>Yes</Type_Sent>
+        <Country>Italy</Country>
+        <Year>2005</Year>
+        <Author>Giovanni Rossi</Author>
+        <Valuable>Historical</Valuable>
+    </Card>
+</Old_Cards>

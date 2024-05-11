@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="book">
+        <complexType>
+            <sequence>
+                <element name="title" type="string"/>
+                <element name="author" type="string"/>
+                <element name="year" type="int"/>
+                <element name="pages" type="int"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
